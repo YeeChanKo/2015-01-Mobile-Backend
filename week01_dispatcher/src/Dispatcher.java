@@ -25,6 +25,8 @@ public class Dispatcher {
 			String header = new String(buffer);
 
 			handleMap.get(header).handleEvent(inputStream);
+			
+			socket.close();
 
 		} catch (IOException e) {
 			e.printStackTrace();
