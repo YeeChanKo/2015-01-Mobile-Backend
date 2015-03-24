@@ -17,11 +17,11 @@ public class TestClient {
 				out.write(message.getBytes());
 				socket.close();
 
-				Socket socket2 = new Socket("127.0.0.1", 5000);
-				OutputStream out2 = socket2.getOutputStream();
-				message = "0x6001|hong|1234|홍길동|22|남성";
-				out2.write(message.getBytes());
-				socket2.close();
+//				Socket socket2 = new Socket("127.0.0.1", 5000);
+//				OutputStream out2 = socket2.getOutputStream();
+//				message = "0x6001|hong|1234|홍길동|22|남성";
+//				out2.write(message.getBytes());
+//				socket2.close();
 				
 				Thread.sleep(100);
 
