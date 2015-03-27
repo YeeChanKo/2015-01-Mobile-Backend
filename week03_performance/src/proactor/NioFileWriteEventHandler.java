@@ -13,15 +13,15 @@ import java.util.concurrent.Future;
 
 public class NioFileWriteEventHandler implements NioEventHandler {
 
-	private static final String FILE_PATH = "/Users/viz/Desktop/test";
+	private static final String FILE_PATH = "/Users/viz/Desktop/test/temp";
 
 	private AsynchronousSocketChannel channel;
 
 	// 512B
-	private static final int DATA_BYTE_SIZE = 512;
+	// private static final int DATA_BYTE_SIZE = 512;
 
 	// 3KB
-	// private static final int DATA_BYTE_SIZE = 1024 * 3;
+	private static final int DATA_BYTE_SIZE = 1024 * 3;
 
 	// 200KB
 	// private static final int DATA_BYTE_SIZE = 1024 * 200;

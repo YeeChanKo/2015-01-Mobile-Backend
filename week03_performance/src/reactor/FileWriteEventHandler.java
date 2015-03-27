@@ -20,16 +20,16 @@ public class FileWriteEventHandler implements EventHandler {
 	// private static final int DATA_BYTE_SIZE = 512;
 
 	// 3KB
-	// private static final int DATA_BYTE_SIZE = 1024 * 3;
+	private static final int DATA_BYTE_SIZE = 1024 * 3;
 
 	// 200KB
-	private static final int DATA_BYTE_SIZE = 1024 * 200;
+	// private static final int DATA_BYTE_SIZE = 1024 * 200;
 
 	// 2MB
 	// private static final int DATA_BYTE_SIZE = 1024 * 1024 * 2;
 
 	// 20MB
-	// private static final int DATA_BYTE_SIZE = 1024 * 1024 * 20;
+	//private static final int DATA_BYTE_SIZE = 1024 * 1024 * 20;
 
 	/**
 	 * @brief 이벤트 핸들러의 header를 반환한다.
@@ -54,7 +54,7 @@ public class FileWriteEventHandler implements EventHandler {
 			SimpleDateFormat dayTime = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss-SSS");
 			String writeTime = dayTime.format(new Date(time));
 
-			String filename = "/Users/viz/Desktop/test/reactor_" + writeTime + ".dat";
+			String filename = "/Users/viz/Desktop/test/temp/reactor_" + writeTime + ".dat";
 
 			// create an object of FileOutputStream
 			FileOutputStream fos = new FileOutputStream(new File(filename));

@@ -23,9 +23,9 @@ public class Proactor {
 		
 	}
 	private int port = 5000;
-	private static int threadPoolSize = 30;
-	private static int initialSize = 20;
-	private static int backlog = 200;
+	private static int threadPoolSize = 50;
+	private static int initialSize = 1;
+	private static int backlog = 50;
 	
 	private NioHandleMap handleMap;
 	
